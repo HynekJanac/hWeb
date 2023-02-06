@@ -1,0 +1,61 @@
+
+:root[data-theme='light']{
+    --main-color: #ff7033ff;
+    --background-color: #ece8e5;
+    --secondary-color: #ffffff;
+    --text-color: #000000;
+    --footnote-color: rgba(0, 0, 0, 0.712);
+    --grid: 1fr;
+}
+/*Darkmode*/
+/*secondary color #0e0e0e*/
+:root[data-theme='dark']{
+    --main-color: #ff7033ff;
+    --background-color: #1f1d1d;
+    --secondary-color: #111111;
+    --text-color: #ffffff;
+    --footnote-color: rgba(255, 255, 255, 0.712);
+    --grid: 1fr;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    background-color: var(--background-color);
+    background-image: url("../Img/Svg/Countdown-min.webp");
+    background-size: 100%;
+}
+
+.countdown-wrap{
+    text-align: center;
+    margin-top: 22%;
+}
+
+#countdown{
+    font-family: 'Lexend Mega', sans-serif;
+    color: var(--main-color); 
+    font-size: 80px;
+}
+@media(max-width: 1650px){
+    body{
+       background-image: none;
+    }
+
+    
+}
+
+@media(max-width: 1250px){
+    .countdown-wrap{
+        text-align: center;
+        margin-top: 30%;
+    }
+}
+
+@media(max-width: 800px){
+    .countdown-wrap{
+        text-align: center;
+        margin-top: 60%;
+        font-size: 65px;
+    }
+}

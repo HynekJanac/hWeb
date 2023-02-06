@@ -1,0 +1,128 @@
+body{
+    padding:  0 7% 0 7% ;
+}
+
+.main-heading{
+  color: var(--main-color);
+	font-weight: 900;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.short-info{
+  text-align: center;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.short-info a{
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.section_list{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 ;
+  list-style: none;
+  margin: 0;
+}
+
+.section_list li{
+  margin: 30px 0 0 0;
+}
+
+.section_list li a{
+  text-decoration: none;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: var(--backround-color);
+  transition: all .2s ease-in-out;
+}
+
+
+.section_list li a:hover{
+  color: var(--backround-color);
+  transform: scale(1.1);
+  background-color: var(--main-color);
+}
+
+
+.section_heading{
+  color: var(--main-color);
+	font-weight: 900;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+
+
+.gallery-grid img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    margin: 1rem 0 1rem 0;
+    cursor: zoom-in;
+ }
+
+  
+.gallery-grid img:hover {
+    transform: translateY(-3px) scale(1.1);
+ }
+
+
+.gallery-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  /* Medium screens */
+  @media screen and (min-width: 1000px) {
+    .section_list{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 20% 0 20%;
+    }
+
+    .section_list li{
+      margin: 0;
+    }
+    
+    .section_list li a{
+      border: 2px solid var(--main-color);
+      padding: 7px;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .main-heading{
+      margin-bottom: 30px;
+    }
+
+    body{
+      background-image: none;
+      padding: 0 10% 0 10%;
+  }
+  
+    
+  }
+  

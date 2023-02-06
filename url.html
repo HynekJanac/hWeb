@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/Img/Svgs/Logo.svg" type="image/x-icon">
+        <title>Redirecting...</title>
+        <script defer>
+            //custom url shortener all you need to do is add url into the list and then hynekjanac.com/url?id=index
+            var urls = ['https://www.hynekjanac.com/','https://wowthismany.netlify.app/']
+            var id = new URLSearchParams(window.location.search).get('id')
+            window.location.replace(urls[Number(id)]);
+        </script>
+    </head>
+<body>
+</body>
+</html>

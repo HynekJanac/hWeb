@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Hynek Janáč">
+
+    <link rel="shortcut icon" href="Img/Svg/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="Css/Menu.css">
+    <link rel="stylesheet" href="Css/Universal.css">
+    
+    <link rel="stylesheet" href="Css/Article.css">
+    <link rel="stylesheet" href="Css/Gallery.css">
+
+
+    <title>Gallery</title>
+    <script defer src="Js/Gallery.js"></script>
+    <script defer src="Js/Utility.js"></script>
+    <script defer src="https://kit.fontawesome.com/e7d2d6d226.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+   <header class="header">
+
+        <a class="logo_link" href="https://www.hynekjanac.com/"><img src="../Img/Svg/Logo.svg" alt="" class="logo"></a>
+        <a href="#infobox" class="jump-to-content">Jump to content</a>
+        <div class="menu_container">
+            <img onclick="Menu()" src="../Img/Svg/Burger.svg" alt="menu">
+        </div>
+
+        <!--Links are added by Utility.js-->
+        <nav class="nav" id="nav">
+            <ul class="nav_list" id="nav-list">
+    
+            </ul>
+        </nav>
+    </header>
+
+    <div id="infobox" class="infobox" >Empty</div>
+    <!--Infobox is used to display one message across all the pages thanks to Utility.js -->
+
+    <main class="main" style="padding: 0;">
+        <h1 class="main-heading">Welcome to my gallery 🖼️</h1>
+
+        <ul class="section_list" id="">
+            <li>
+                <a href="#" onclick="Filter('1')">Photography</a>
+            </li>
+            <li>
+                <a href="#" onclick="Filter('2');NetworkHandler('design')">Graphic desing</a>
+            </li>
+            <li>
+                <a href="#" onclick="Filter('3');NetworkHandler('blender')">3D renders</a>
+            </li>
+            
+        </ul>
+
+        <div class="popup-container">
+            <span>&times;</span>
+            <img src="./Img/Gallery/hynek-janac-7TtfWHPn7S4-unsplash.jpg" alt="">
+
+        </div>
+
+        <section id="1">
+        <h2 class="section_heading" id="Photography">Photography</h2>
+        <p class="short-info">For more high quality images check out <a href="https://unsplash.com/@hynekjanac" target="_blank">Unsplash</a>, <a href="https://pixabay.com/users/hynekjanac" target="_blank">Pixabay</a> and <a href="https://www.shutterstock.com/g/HynekJanac" target="_blank">Shutterstock</a></p>
+        <div id="gallery-grid" class="gallery-grid">
+            <div class="column" id="photo-column-1">
+
+            </div>
+            <div class="column" id="photo-column-2">
+
+
+            </div>
+            <div class="column" id="photo-column-3">
+
+
+            </div>
+            
+        </div>
+        </section>
+
+
+        <section id="2" style="display: none;">
+        <h2 class="section_heading" id="Graphic-design">Graphic design</h2>
+        <p class="short-info">For more high quality designs check out <a href="https://www.behance.net/hynekjan" target="_blank">Behance</a> and <a href="https://www.shutterstock.com/g/HynekJanac" target="_blank">Shutterstock</a></p>
+        <div id="gallery-grid" class="gallery-grid">
+            <div class="column" id="design-column-1">
+            </div>
+            <div class="column" id="design-column-2">
+
+
+            </div>
+            <div class="column" id="design-column-3">
+
+
+            </div>
+            
+        </div>
+        </section>
+        
+        <section id="3" style="display: none;">
+        <h2 class="section_heading" id="3D-renders">3D renders</h2>
+        <p class="short-info">For more high quality images check out <a href="https://www.artstation.com/hynek_janac" target="_blank">Artstation</a></p>
+        <div id="gallery-grid" class="gallery-grid">
+            <div class="column" id="blender-column-1">
+
+            </div>
+            <div class="column" id="blender-column-2">
+
+
+            </div>
+            <div class="column" id="blender-column-3">
+
+
+            </div>
+        
+        </div> 
+        </section>
+
+        <form class="email" id="newsletter_id"></form>
+
+        <a title="return back to top" id="back-to-top" class="back-to-top" href="#"><i class="icon fas fa-angle-up"></i></a>
+    
+        <!--Links are added by Utility.js-->
+        <footer id="social-grid"></footer>
+
+    </main>
+    <div class="cookie-consent" id="cookie-consent" style="display: block;"></div>
+</body>
+</html>

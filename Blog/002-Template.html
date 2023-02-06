@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Hynek Janáč">
+
+        <link rel="shortcut icon" href="../Img/Svg/Logo.svg" type="image/x-icon">
+        
+        <link rel="stylesheet" href="../Css/Article.css">
+        <link rel="stylesheet" href="../Css/Universal.css">
+        
+        <title>Article</title>
+        <script defer src="../Js/Utility.js"></script>
+        <script defer src="../Js/Cookies.js"></script>
+        <script defer src="../Js/contents.js"></script>
+        <script defer src="../Js/jquery-3.6.0.min.js"></script>
+        <script defer src="https://kit.fontawesome.com/e7d2d6d226.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+   
+
+    <header class="header">
+        <a class="logo_link" href="https://www.hynekjanac.com/"><img src="../Img/Svg/Logo.svg" alt="" class="logo"></a>
+        <a href="#infobox" class="jump-to-content">Jump to content</a>
+        <div class="menu_container">
+            <img onclick="Menu()" src="../Img/Svg/Burger.svg" alt="menu">
+        </div>
+
+        <nav class="nav" id="nav">
+            <ul class="nav_list" id="nav-list"></ul>
+        </nav>
+    </header>
+
+    <div id="infobox" class="infobox">Empty</div>
+    <!--Infobox is used to display one message across all the pages thanks to Utility.js -->
+    
+    <main class="main">
+        <div class="content">
+            <h1 class="headline">Headline</h1>
+            <p class="date">1. January 2021</p>
+            <!-- SHARE BUTTONS -->
+            <!-- URls are updated automaticaly thansk to URL.js -->
+            <footer class="share-wrap">
+                <a class="social" href="#" onclick="ShareUrl(); CopyLink()"><i class="icon fas fa-link"></i></a>
+                <a id="twitter_share" class="social" onclick="ShareUrl()" href="https://twitter.com/intent/tweet?text=Headline%20https://www.hynekjanac.com/Articles/..." target="blank"><i class="icon fab fa-twitter" ></i></a>
+                <a id="facebook_share" class="social" onclick="ShareUrl()" href="https://www.facebook.com/sharer/sharer.php?u=https://www.hynekjanac.com/Articles/...;src=sdkpreparse" target="_blank"><i class="icon fab fa-facebook"></i></a>
+            </footer>
+
+
+            <!-- URls is updated automaticaly thansk to URL.js -->
+            <input type="text" value="" id="Copy">
+            <p id="Copy_Info">The link has been copied!</p>
+            <!-- SHARE BUTTONS -->
+
+            <nav role="navigation" class="table-of-contents">
+                <h2 class="contents-title">Contents</h2><a id="showhide-contents" onclick="ShowHideContents()">(hide)</a>
+                <ul class="table-of-contents-list" id="table-of-contents-list">
+                  <li><a href="#title">Headinng</a></li>
+                </ul>
+            </nav>
+                <article>
+                    <h2 id="Heading">Heading</h2>
+                    <q>An unexamined life is not worth living<sup ><a class="ref"href="#reference-1">[1]</a></sup></q>
+                    <p>Lorem ipsum <b>bold</b> <i>italic</i> <a class="hyperlink"href="link">link</a></p>
+                    <img src="https://cdna.artstation.com/p/assets/images/images/017/476/870/large/hynek-janac-wallpaper.jpg?1556133372" alt="">
+                    
+                    <div class="image-grid">
+                        <div >
+                            <img width="250px" src="../Img/Blog/IContainMultitudes - cover.webp" alt="">
+                            <p class="caption">I Contain Mulltitudes - Ed Yong</p>
+                        </div>
+                        
+                         <div>
+                             <img width="250px" src="../Img/Blog/Blueprint.webp" alt="">
+                             <p class="caption">Blueprint - Robert Plomin</p>
+                         </div>
+     
+                         <div>
+                             <img  width="250px" src="../Img/Blog/History of everything.webp" alt="">
+                             <p class="caption">A short History of Nearly Everything - Bill Bryson</p>
+                         </div>
+     
+                         <div>
+                             <img width="250px" src="../Img/Blog/At home.webp" alt="">
+                             <p class="caption">At Home - Bill Bryson</p>
+                         </div>
+     
+                         <div>
+                             <img width="250px" src="../Img/Blog/Leonardo.webp" alt="">
+                             <p class="caption">Leonardo Da Vinci - Walter Isaacson</p>
+                         </div>
+     
+                         <div>
+                             <img width="250px" src="../Img/Blog/Atomic.webp" alt="">
+                             <p class="caption">Atomic Habits - James Clear</p>
+                         </div>      
+
+                    </div>
+                    <iframe class="spotify"src="https://open.spotify.com/embed-podcast/show/4LUx6oYWDzNYRBhSF7T7cX" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe class="npr" src="https://www.npr.org/player/embed/969032187/969034441" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+                    <iframe class="youtube"src="https://www.youtube-nocookie.com/embed/JaeCFkcDn_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2 class="heading2" id="references">References</h2>
+                <ol class="references-list">
+                    <li id="reference-1">Reference 1</li>
+                    <li id="reference-2">Reference 2</li>
+                    <li id="reference-3">Reference 3</li>
+                    <li id="reference-4">Reference 4</li>
+                </ol>
+                </article>
+            </div>
+   
+
+    <form class="email" id="newsletter_id"></form>
+
+    <a title="return back to top" id="back-to-top" class="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+    
+
+   <!--Links are added by Utility.js-->
+   <footer id="social-grid"></footer>
+
+    </main>
+    <div class="cookie-consent" id="cookie-consent" style="display: block;"></div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="7.3012695mm"
+   height="1.6682014mm"
+   viewBox="0 0 7.3012695 1.6682014"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="Logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="16"
+     inkscape:cx="21.53125"
+     inkscape:cy="1.5625"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2781">
+      <stop
+         style="stop-color:#93a3ff;stop-opacity:1;"
+         offset="0"
+         id="stop2779" />
+      <stop
+         style="stop-color:#4f7efc;stop-opacity:1;"
+         offset="1"
+         id="stop2777" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1738">
+      <stop
+         style="stop-color:#4f7efc;stop-opacity:1;"
+         offset="0"
+         id="stop1734" />
+      <stop
+         style="stop-color:#93a3ff;stop-opacity:1;"
+         offset="1"
+         id="stop1736" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect40756"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.7904824,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect40752"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.7904824,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect40748"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.7904824,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect40744"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.7904824,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <rect
+       x="153.39517"
+       y="135.55852"
+       width="492.29147"
+       height="267.54971"
+       id="rect40734" />
+    <rect
+       x="153.39517"
+       y="135.55852"
+       width="492.29147"
+       height="267.54971"
+       id="rect40736" />
+    <rect
+       x="153.39517"
+       y="135.55852"
+       width="492.29147"
+       height="267.54971"
+       id="rect40738" />
+    <rect
+       x="153.39517"
+       y="135.55852"
+       width="492.29147"
+       height="267.54971"
+       id="rect40740" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2781"
+       id="linearGradient2783"
+       x1="155.79453"
+       y1="157.48526"
+       x2="253.61462"
+       y2="157.48526"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1738"
+       id="linearGradient1662"
+       gradientUnits="userSpaceOnUse"
+       x1="49.578411"
+       y1="40.401669"
+       x2="51.15971"
+       y2="40.401669" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1738"
+       id="linearGradient1664"
+       gradientUnits="userSpaceOnUse"
+       x1="49.578411"
+       y1="40.401669"
+       x2="51.15971"
+       y2="40.401669" />
+  </defs>
+  <path
+     id="path40684"
+     style="fill:url(#linearGradient1662);fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 51.159711,40.445119 h -0.790649 a 0.7904824,0.7904824 0 0 0 -0.79065,0.79065 h 0.79065 a 0.7904824,0.7904824 0 0 0 0.790649,-0.79065 z"
+     transform="translate(-49.578413,-39.567567)" />
+  <path
+     id="path40686"
+     style="fill:url(#linearGradient1664);fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 49.578412,39.567568 h 0.790649 a 0.7904824,0.7904824 0 0 1 0.79065,0.790649 h -0.79065 a 0.7904824,0.7904824 0 0 1 -0.790649,-0.790649 z"
+     transform="translate(-49.578413,-39.567567)" />
+  <text
+     xml:space="preserve"
+     transform="matrix(0.05465269,0,0,0.05465269,-6.5594566,-7.7729919)"
+     id="text40696"
+     style="fill:url(#linearGradient2783);fill-opacity:1;font-size:40px;line-height:1.25;font-family:Urbanist;-inkscape-font-specification:'Urbanist, @wght=400';font-variation-settings:'wght' 400;white-space:pre;shape-inside:url(#rect40736);display:inline"><tspan
+       x="153.39453"
+       y="172.22526"
+       id="tspan4704"><tspan
+         style="font-weight:bold"
+         id="tspan4702">hWeb</tspan></tspan></text>
+</svg>

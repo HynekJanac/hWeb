@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="42"
+   height="42"
+   viewBox="0 0 42 42"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Burger.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview5160"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="21.166667"
+     inkscape:cx="16.937008"
+     inkscape:cy="21.023622"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2" />
+  <path
+     id="rect477"
+     style="stroke-width:1.93616;fill:#4f7efcff;fill-opacity:1;stroke-linejoin:round;stop-color:#000000;stroke:none"
+     d="M 10.046347 9.1267697 C 9.721356 9.1267697 9.4599594 9.3888723 9.4599594 9.7138628 L 9.4599594 10.817511 C 9.4599594 11.142501 9.721356 11.404604 10.046347 11.404604 L 27.283644 11.404604 C 27.608634 11.404604 27.870031 11.142501 27.870031 10.817511 L 27.870031 9.7138628 C 27.870031 9.3888723 27.608634 9.1267697 27.283644 9.1267697 L 10.046347 9.1267697 z M 12.849816 14.656948 C 12.524826 14.656948 12.262393 14.917965 12.262393 15.242956 L 12.262393 16.347689 C 12.262393 16.672679 12.524826 16.933697 12.849816 16.933697 L 27.283644 16.933697 C 27.608634 16.933697 27.870031 16.672679 27.870031 16.347689 L 27.870031 15.242956 C 27.870031 14.917965 27.608634 14.656948 27.283644 14.656948 L 12.849816 14.656948 z M 17.605147 20.18604 C 17.280156 20.18604 17.01876 20.448143 17.01876 20.773133 L 17.01876 21.876782 C 17.01876 22.201772 17.280156 22.463875 17.605147 22.463875 L 27.283644 22.463875 C 27.608634 22.463875 27.870031 22.201772 27.870031 21.876782 L 27.870031 20.773133 C 27.870031 20.448143 27.608634 20.18604 27.283644 20.18604 L 17.605147 20.18604 z "
+     transform="matrix(1.8852198,0,0,1.7997839,-14.187618,-7.2543378)" />
+</svg>

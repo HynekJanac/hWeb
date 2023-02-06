@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Hynek Janáč">
+
+    <link rel="shortcut icon" href="Img/Svg/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="Css/Menu.css">
+    <link rel="stylesheet" href="Css/Universal.css">
+
+    <title>Search</title>
+
+    <script defer src="Js/Utility.js"></script>
+    <script defer src="https://kit.fontawesome.com/e7d2d6d226.js" crossorigin="anonymous"></script>
+    <script defer src="Js/Cookies.js"></script>
+    <script defer>
+        function Search() {
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('Input');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("List_of_posts");
+          li = ul.getElementsByTagName('li');
+        
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+
+
+    <style>
+        q{
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'Shippori Mincho', serif;
+            color: var(--text-color);
+            quotes: "„" "“";
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        q::before{
+            color: var(--main-color);
+            font-family: 'Shippori Mincho', serif;
+            font-size: 40px;
+        }
+        q::after{
+            color: var(--main-color);
+            font-family: 'Shippori Mincho', serif;
+            font-size: 40px;
+        }
+        #Input{
+            text-transform: uppercase;
+            border-radius: 5rem;
+            padding: 1.5rem;
+            width: 100%;
+            background-color: var(--secondary-color);
+            border: solid 1px var(--main-color);
+            color: var(--main-color);
+            font-size: 20px;
+            font-weight: bold;
+
+            
+        }
+
+        .searchwrap{
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        #List_of_posts{
+            text-align: center;
+            list-style: none;
+            margin: none;
+            padding: 0;
+        }
+
+        #List_of_posts li a{
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            color: var(--main-color);
+
+            text-transform: uppercase;
+        }
+        #List_of_posts li a:hover{
+            color: var(--text-color);
+        }
+        @media (min-width: 1275px){
+            #Input{
+            width: 80%;
+            
+
+            
+        }
+        
+        }
+
+
+    </style>
+    
+</head>
+
+<body>
+  
+   <header class="header">
+
+        <a class="logo_link" href="https://www.hynekjanac.com/"><img src="Img/Svg/Logo.svg" alt="" class="logo"></a>
+        <a href="#infobox" class="jump-to-content">Jump to content</a>
+        <div class="menu_container">
+            <img onclick="Menu()" src="../Img/Svg/Burger.svg" alt="menu">
+        </div>
+
+        <!--Links are added by Utility.js-->
+        <nav class="nav" id="nav">
+            <ul class="nav_list" id="nav-list">
+           
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="infobox" class="infobox" >Empty</div>
+    <!--Infobox is used to display one message across all the pages thanks to Utility.js -->
+
+    <main class="main">
+        <q >Of all my seeking this is all my gain: No agony of any mortal brain Shall wrest the secret of the life of man; The Search has taught me that the Search is vain. - Omar Khayyam </q>
+        <form class="searchwrap" action="">
+            <input type="text" id="Input" onkeyup="Search()" placeholder="Search for posts...">
+        </form>
+        
+        <ul id="List_of_posts">
+            <li><a href="Blog/008-On-reading.html">On reading</a></li>
+        </ul>
+        
+ 
+        <form class="email" id="newsletter_id"></form>
+
+        
+        <a title="return back to top" id="back-to-top" class="back-to-top" href="#"><i class="icon fas fa-angle-up"></i></a>
+    
+    
+        <!--Links are added by Utility.js-->
+        <footer id="social-grid"></footer>
+
+
+    </main>
+    <div class="cookie-consent" id="cookie-consent" style="display: block;"></div>
+</body>
+</html>

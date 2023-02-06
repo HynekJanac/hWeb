@@ -1,0 +1,122 @@
+/*About */
+.about-headline{
+	color: var(--main-color);
+	font-size: 30px;
+}
+.about{
+	border-radius: 20px;
+	width: 95%;
+	display: grid;
+	margin: 50px auto 50px auto;
+}
+.about-text{
+	padding: 10px 15px 25px 15px;
+	color: var(--text-color);
+}
+.about-text-left{
+	padding: 10px 15px 25px 15px;
+	text-align: right;
+}
+.about-info{
+	font-size: 18px;
+}
+.about-image{
+	width: 100%;
+	border-radius: 20px 20px 20px 20px;
+	display: none;
+}
+.about-image-left{
+	width: 100%;
+	border-radius: 20px 20px 20px 20px;
+}
+.about-image-mobile{
+	width: 100%;	
+	border-radius: 20px 20px 20px 20px;
+}
+.about-hyperlink{
+	font-weight: 700;
+	font-size: 20px;
+	display: block;
+	text-decoration: none;
+	color: var(--main-color);
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+.about-hyperlink:hover{
+	font-size: 1.5em;
+	
+
+}
+/* -----------------MEDIA-------------- */
+/*Laptop friendly */
+@media (min-width: 1430px){
+	/*About*/
+	.about{
+		border-radius: 20px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 50px auto 50px auto;
+	}
+	.about-text{
+		padding: 10px 25px 25px 25px;
+	}
+
+	.about-text-left{
+		text-align: right;
+		padding: 20px 50px 50px 50px;
+	}
+	.about-info{
+		font-size: auto;
+	}
+	.about-image{
+		width: 100%;
+		border-radius: 20px 20px 20px 20px;
+		display: block;
+	}
+	.about-image-left{
+		width: 100%;
+		border-radius: 20px 20px 20px 20px;
+	}
+	.about-image-mobile{
+		display: none;
+	}
+	.about-hyperlink{
+		text-decoration: none;
+		color: var(--main-color);
+		text-transform: uppercase;
+	}
+	.about-hyperlink:hover{
+		font-weight: bold;
+	}
+}
+/*Desktop ready*/
+@media (min-width: 1600px){
+	/*About*/
+	.about-headline{
+		font-size: 35px;
+	}
+	.about{
+		border-radius: 20px;
+		width: 90%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 50px auto 50px auto;
+	}
+	.about-text{
+		padding: 20px 50px 0px 50px;
+	}
+	.about-text-left{
+		padding: 20px 50px 50px 50px;
+		text-align: right;
+	}
+	.about-info{
+		font-size: 20px;
+	}
+	.about-hyperlink{
+		font-size: 22px;
+	}
+	.about-hyperlink:hover{
+		font-weight: bold;
+	}
+}

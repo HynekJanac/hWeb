@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Img/Svg/Articlewriter.svg" type="image/x-icon">
+    <title>Article Writer</title>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style" onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&display=swap" >
+    <link rel="stylesheet" href="./Css/Articlewriter.css">
+    <script>
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+    document.documentElement.setAttribute("data-theme","dark")
+
+    }
+    else{
+    document.documentElement.setAttribute("data-theme","light")
+    }
+    </script>
+    <script defer src="https://kit.fontawesome.com/e7d2d6d226.js" crossorigin="anonymous"></script>
+    <script defer>
+    //Textscript enables advanced text editing feautres (bold, italic, href)
+    //It needs to be run after every action othewise you wouldn't be able to use advanced editing
+    function textscript(){
+            let output = document.getElementById('output');
+            let buttons = document.getElementsByClassName('tool--btn');
+            for (let btn of buttons) {
+                btn.addEventListener('click', () => {
+                    let cmd = btn.dataset['command'];
+                    if(cmd === 'createlink') {
+                        let url = prompt("Enter the link here: ", "http:\/\/");
+                        document.execCommand(cmd, false, url);
+                    } else {
+                        document.execCommand(cmd, false, null);
+                    }
+                })}}
+
+    //Addtetxt adds contenteditable div block
+    function addtext( ){
+
+        var textcode = String('<div class="toolbar"> <ul class="tool-list"> <li class="tool"> <button type="button" data-command="bold" class="tool--btn">'+"<i class=' fas fa-bold'></i> </button> </li>" +'<li class="tool"> <button type="button" data-command="italic" class="tool--btn">'+"<i class=' fas fa-italic'></i> </button> </li>" + ' <li class="tool"> <button type="button" data-command="underline" class="tool--btn">'+ " <i class=' fas fa-underline'></i> </button> </li>" + '<li class="tool"> <button type="button" data-command="insertOrderedList" class="tool--btn">'+ "<i class=' fas fa-list-ol'></i> </button> </li>"+'<li class="tool"> <button type="button" data-command="insertUnorderedList" class="tool--btn">'+ "<i class=' fas fa-list-ul'></i> </button> </li>"+ '<li class="tool"> <button type="button" data-command="createlink" class="tool--btn">'+ "<i class=' fas fa-link'></i> </button> </li> </ul> </div>" +'<div class="output-selector" id="output" contenteditable="true" title="text-block"></div>');
+
+        document.getElementById("contentblock").innerHTML += textcode;
+        textscript();
+    
+    }
+    //Addheading adds contenteditable div block
+    function addheading(){
+        var headingcode = String('<div class="output-selector" id="heading" title="heading-block" contenteditable="true"></div>')
+        document.getElementById("contentblock").innerHTML += headingcode;
+        textscript();
+    }
+    //Addimage asks for source and alt and createates image
+    function addimage(){
+        var path = window.prompt("Add image path","../Img/Other/Writing/");
+        var alt = window.prompt("Add image alt","picture of a cat");
+        imagecode = String('<img src="'+path+'" alt="'+alt+'" class="output-selector" id="image" title="image-block">')
+        document.getElementById("contentblock").innerHTML += imagecode;
+        textscript();
+    }
+
+    //Addcoverimage
+    function addcoverimage(){
+        var path = window.prompt("Add image path","../Img/Other/Writing/");
+        var alt = window.prompt("Add image alt","picture of a cat");
+        imagecode = String('<img src="'+path+'" alt="'+alt+'" class="output-selector" id="cover-image" title="image-block">')
+        document.getElementById("contentblock").innerHTML += imagecode;
+        textscript();
+    }
+
+    //Addquote adds contenteditable div block
+    function addquote(){
+        var quotecode = String('<div class="output-selector" title="quote-block" id="quote" contenteditable="true"></div>')
+        document.getElementById("contentblock").innerHTML += quotecode;
+        textscript();
+    }
+    //Addquote adds contenteditable div block
+    function addcode(){
+        var codecode = String('<div class="output-selector" title="code-block" id="code" contenteditable="true"></div>')
+        document.getElementById("contentblock").innerHTML += codecode;
+        textscript();}
+        
+    //Prompts the usere to save the current procject
+    function backupweb(){
+        window.alert("Press Ctrl + S to download current page");
+        textscript();
+    }
+    </script>
+</head>
+
+<body>
+    <main>
+    <h1 class="bigheading" id="lol">Article writer</h1>
+    <p style="color: var(--main-color); text-align: center; font-size: 20px;">Article writer is a simple tool that allows you write an article with ease.</p>
+    <div class="heading-selector" id="heading" style="font-size: 35px; height: 50px;" contenteditable="true">heading</div>
+    <div class="date" id="heading" style="text-transform: none;font-size: 20px;font-weight: 300;" contenteditable="true"></div>
+    <div class="cover-image" onclick="addcoverimage()"><img src="" alt=""></div>
+
+    <div id="contentblock"></div>
+    <div class="buttons-grid">
+        <button class="button" onclick="addheading()" title="add heading"><i class="fas fa-heading"></i></button>
+        <button class="button" onclick="addtext()" title="add text"><i class="fas fa-font"></i></button>
+        <button class="button" onclick="addimage()" title="add image"><i class="fas fa-image"></i></button>
+        <button class="button" onclick="addquote()" title="add quote"><i class="fas fa-quote-right"></i></i></button>
+        <button class="button" onclick="addcode()" title="add code"><i class="fas fa-code"></i></button>
+        <button class="button" onclick="backupweb()" title="save project"><i class="fas fa-save"></i></button>
+        <button class="button" onclick="exportweb()" title="export"><i class="fas fa-file-export"></i></button>
+    </div>
+
+    <div class="Exports" style="display: none;">
+        <p>Now you can copy and paste the code</p>
+        <p>Article</p>
+        <div class="page" id="page" contenteditable="false"></div>
+        <input style="display: none;"class="copypage" type="text" value="">
+        <p class="copy-info" id="" style="display: none; color: var(--main-color);">Copied!</p>
+        <button class="button" onclick="copy_code(0)"><i class="fas fa-copy"></i></button>
+        <p>Thumbnail</p>
+        <div class="page" id="page" contenteditable="false" style="height: 100px;"></div>
+        <input style="display: none;" class="copypage" type="text" value="">
+        <p class="copy-info" style="display: none; color: var(--main-color);">Copied!</p>
+        <button class="button" onclick="copy_code(1)"><i class="fas fa-copy"></i></button>
+    </div>
+    </main>
+
+    <script defer>
+        //This script gets the current date and adds eiter abbrevition or full month name
+        var AbrrmonthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var LongmonthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+        var d = new Date();
+        var n = d.getMonth();
+        var short_date =  String(d.getDate()) + ". " + String(AbrrmonthNames[n] +" "+String(d.getFullYear()))
+        document.getElementsByClassName("date")[0].innerHTML = short_date
+    </script>
+    
+    <script defer>
+        //Export web finds all the blocks and converts them to HTML
+    function exportweb(){
+        //
+        document.getElementsByClassName("Exports")[0].style.display = "block";
+        var title = document.getElementsByClassName("heading-selector")[0].innerHTML
+        var complete_date =  String(d.getDate()) + ". " + String(LongmonthNames[n] +" "+String(d.getFullYear()))
+        var article_sneakpeak = '<div class="article"><a class="article_hypertext" href="../Articles/"></a> <img class="article_thumbnail" src="../Img/Other/Articles/" alt="alt"></img> <div class="article_content"><h2 class="article_headline">'+ title +'</h2><p class="article_sneakpeak">' + String(document.querySelector('[title="text-block"]').innerHTML).substring(0, 156) + '...'+'</p><p class="article_type">' + short_date + '</p></div></div>'
+        
+        //Converts the output
+        var outputs = document.getElementsByClassName("output-selector")
+        for (var i=0; i<outputs.length;i++){
+            var element = outputs[i];
+            if (element.title == "heading-block"){
+                var code = '&lt;h2 id="'+String((element.innerHTML)).replace(/\s/g,"-") + '"&gt;'+String((element.innerHTML)).replace(/</g,"&lt;").replace(/>/g,"&gt;") +'&lt;/h2&gt;'
+            }
+            if (element.title == "text-block"){
+                var code = '&lt;p &gt;'+String((element.innerHTML)).replace(/</g,"&lt;").replace(/>/g,"&gt;") +'&lt;/p&gt;'
+            }
+            if (element.title == "image-block"){
+                var code = '&lt;img '+ 'src="'+String(element.src)+ '" alt="' + String(element.alt) +'"&gt;&lt;/img&gt;'
+            }
+            if (element.title == "quote-block"){
+                var code = '&lt;q &gt;'+String((element.innerHTML)).replace(/</g,"&lt;").replace(/>/g,"&gt;") +'&lt;/q&gt;'
+            }
+            if (element.title == "code-block"){
+                var code = String((element.innerHTML)).replace(/</g,"&lt;").replace(/>/g,"&gt;")
+            }
+            document.getElementsByClassName("page")[0].innerHTML += code;
+            document.getElementsByClassName("copypage")[0].value += code.replace(/&lt;/g,"<").replace(/&gt;/g,">")
+        }
+
+        document.getElementsByClassName("page")[1].innerHTML += String(article_sneakpeak).replace(/</g,"&lt;").replace(/>/g,"&gt;");
+        document.getElementsByClassName("copypage")[1].value += String(article_sneakpeak)
+    }
+    
+    function copy_code(index){
+        //select the text in the text box
+        document.getElementsByClassName("copypage")[index].style.display = "block";
+        document.getElementsByClassName("copypage")[index].select();
+        //copy the text to the clipboard
+        document.execCommand("copy");
+        document.getElementsByClassName("copypage")[index].style.display = "none";
+        document.getElementsByClassName("copy-info")[index].style.display = "block";
+    }
+</script>
+</body>
+</html>

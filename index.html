@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <meta name="author" content="Hynek Janáč">
+
+    <link rel="shortcut icon" href="Img/Svg/Favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="Css/Menu.css">
+    <link rel="stylesheet" href="Css/Frontpage.css">
+    <link rel="stylesheet" href="Css/Universal.css">
+
+    <title>hWeb</title>
+    <script defer src="./Js/Utility.js"></script>
+    <script defer src="https://kit.fontawesome.com/e7d2d6d226.js" crossorigin="anonymous"></script>
+
+   
+    </script>
+
+</head>
+
+<body>
+   <header class="header">
+       
+
+        <a class="logo_link" href="https://www.hynekjanac.com/"><img src="Img/Svg/Logo.svg" alt="" class="logo"></a>
+        <a href="#infobox" class="jump-to-content">Jump to content</a>
+        
+        <div class="menu_container">
+            <img onclick="Menu()" src="Img/Svg/Burger.svg" alt="menu">
+        </div>
+
+        <!--Links are added by Utility.js-->
+        <nav class="nav" id="nav">
+            <ul class="nav_list" id="nav-list">
+           
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="infobox" class="infobox" >Empty</div>
+    <!--Infobox is used to display one message across all the pages thanks to Utility.js -->
+
+    <main class="main">
+        <p class="hi">The future of webdev</p>
+
+        <div class="about">
+            <img class="about-image-mobile" alt="Picture of Hynek (If the picture is not displayed properly download Firefox)" src="Img/Me.webp">
+            <div class="about-text">
+                <h1 class="about-headline">Hi</h1>
+                <p class="about-info"></p>
+            </div>
+            <img class="about-image" alt="Picture of Hynek (If the picture is not displayed properly download Firefox)" src="Img/Me.webp">
+        </div>
+
+        <div class="about">
+            <img class="about-image-left" alt="Picture of a typewriter (If the picture is not displayed properly download Firefox)" src="Img/notebook-2637757_1920.webp">
+            <div class="about-text">
+                <h1 class="about-headline">Blog</h1>
+                <p class="about-info"></p>
+                <a class="about-hyperlink" href="blog.html">Check it out</a>
+            </div>
+        </div>
+
+
+        <div class="about">
+            <img class="about-image-mobile" alt="Picture painting in a gallery" src="Img/Gallery.webp">
+        
+            <div class="about-text">
+                <h1 class="about-headline">Gallery</h1>
+                <p class="about-info"></p>
+                <a class="about-hyperlink" href="gallery.html">Check it out</a>
+            </div>
+            <img class="about-image" alt="Picture of a leaf with dew" src="Img/Gallery.webp">
+        </div>
+
+        <form class="email" id="newsletter_id"></form>
+
+        <a title="return back to top" id="back-to-top" class="back-to-top" href="#"><i class="icon fas fa-angle-up"></i></a>
+    
+        <!--Links are added by Utility.js-->
+        <footer id="social-grid"></footer>
+    </main>
+    <div class="cookie-consent" id="cookie-consent" style="display: block;"></div>
+</body>
+</html>

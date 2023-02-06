@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Hynek Janáč">
+
+        <link rel="shortcut icon" href="../Img/Svg/Logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="../Css/Article.css">
+        <link rel="stylesheet" href="../Css/Universal.css">
+        
+        
+        <title>What are cookies</title>
+        <script defer src="../Js/jquery-3.6.0.min.js"></script>
+        <script defer src="../Js/Utility.js"></script>
+        <script defer src="https://kit.fontawesome.com/e7d2d6d226.js" crossorigin="anonymous"></script>
+        <script defer src="../Js/ContentsGenerator.js"></script>
+    
+    </head>
+<body>
+
+    <header class="header">
+
+        <a class="logo_link" href="https://www.hynekjanac.com/"><img src="../Img/Svg/Logo.svg" alt="" class="logo"></a>
+        <a href="#infobox" class="jump-to-content">Jump to content</a>
+        <div class="menu_container">
+            <img onclick="Menu()" src="../Img/Svg/Burger.svg" alt="menu">
+        </div>
+
+        <!--Links are added by Utility.js-->
+        <nav class="nav" id="nav">
+            <ul class="nav_list" id="nav-list">
+           
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="infobox" class="infobox" >Empty</div>
+    <!--Infobox is used to display one message across all the pages thanks to Utility.js -->
+
+    <main class="main">
+        <div class="popup-container">
+            <span>&times;</span>
+            <img src="" alt="">
+        </div>
+        <div class="content">
+                
+            <h1>What are cookies</h1>
+            <p class="date">1. March 2022</p>
+            <!-- SHARE BUTTONS -->
+            <!-- URls are updated automaticaly thansk to URL.js -->
+            <footer class="share-wrap">
+                <a class="social" href="#" onclick="ShareUrl(); CopyLink()"><i class="icon fas fa-link"></i></a>
+                <a id="twitter_share" class="social" onclick="ShareUrl()" href="https://twitter.com/intent/tweet?text=Headline%20https://www.hynekjanac.com/Articles/..." target="blank"><i class="icon fab fa-twitter" ></i></a>
+                <a id="facebook_share" class="social" onclick="ShareUrl()" href="https://www.facebook.com/sharer/sharer.php?u=https://www.hynekjanac.com/Articles/...;src=sdkpreparse" target="_blank"><i class="icon fab fa-facebook"></i></a>
+            </footer>
+
+
+            <!-- URls is updated automaticaly thansk to URL.js -->
+            <input type="text" value="https://www.hynekjanac.com/Articles/..." id="Copy">
+            <p id="Copy_Info">The link has been copied!</p>
+            <!-- SHARE BUTTONS -->
+
+            <article id="article-inject">
+              <h2  id="desing">Cookies?</h2>
+              <p>
+                A cookie is a small file that website stores on your computer. It
+                helps the site remember information about your visit, which can be
+                used for analytics (like I do) and other important stuff. But some
+                websites (<i>cough cough Facebook</i>) can also use them to track you
+                across the web. Thankfully most modern browsers already block these
+                cookies by default, but if you want to be extra sure that no website
+                is tracking you, download the free and open-source web extension
+                <a class='hyperlink' target="_blank" href="https://github.com/gorhill/uBlock" title="view uBlock on github">uBlock Origin</a>. That is a general-purpose blocker with more advanced
+                tools, like the power to completely disable JavaScript. <br />
+              </p>
+              <p>
+                And if you are extra cautious about your privacy, use <a target="_blank" class='hyperlink' href="https://www.torproject.org/" title="Tor projcet website">TOR browser</a> .
+                Tor browser anonymizes your internet activity by relaying it across
+                many volunteer-run servers (nodes), so nor the website nor the nodes
+                know who is accessing what. However, this extra privacy comes at the
+                cost of slower internet speed.
+              </p>
+            </article>
+            </div>
+   
+
+    <form class="email" id="newsletter_id"></form>
+    
+    <a title="return back to top" id="back-to-top" class="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+    <!--Links are added by Utility.js-->
+    <footer id="social-grid"></footer>
+
+    </main>
+    <div class="cookie-consent" id="cookie-consent" style="display: block;"></div>
+</body>
+</html>
