@@ -19,7 +19,7 @@ document.getElementById("infobox").innerHTML = infobox_message
 //Add [NEW] to the tittle to add notification
 var subpage1 ='<li class="nav_list_items"><a title="Blog" href="../blog.html" class="nav_link">Blog</a></li>';
 var subpage2 ='<li class="nav_list_items"><a title="Gallery [NEW]" href="../gallery.html" class="nav_link">Gallery</a></li>'
-var subpage3 ='<li class="nav_list_items"><a title="Donate" href="../donate.html" class="nav_link">Donate 💙</a></li>';
+var subpage3 ='<li class="nav_list_items"><a title="Donate" href="../donate.html" class="nav_link">Donate 🧡</a></li>';
 var subpage4 ='<li class="nav_list_items"><a title="Search" href="../search.html" class="nav_link"><i class="fa-solid fa-magnifying-glass"></i></li>';
 
 
@@ -175,7 +175,6 @@ function GotIt() {
     window.location.reload(true) 
 
 }
-
 
 function LoadContent(){
     var total_section_number = document.querySelectorAll('.section').length;
